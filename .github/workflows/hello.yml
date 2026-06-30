@@ -6,4 +6,5 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello! My robot works."
+      - uses: actions/checkout@v7
+      - run: python greet.py
