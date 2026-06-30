@@ -1,9 +1,11 @@
-name: Hello
+name: Run my code
 
-on: push
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
-  say-hello:
+  run-it:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
